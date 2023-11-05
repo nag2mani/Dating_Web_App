@@ -5,3 +5,5 @@ I have used the following Tech - Stack :
 1. HTML5
 2. CSS
 3. BootStrap
+4. JavaScript
+5. Python
