@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Registration Page</title>
+        <link rel="stylesheet" href="match.css">
+
+        <!-- <link rel="stylesheet" href="match.css"> -->
+
+        <style>
+            label {
+                display: block;
+                margin-top: 10px;
+            }
+
+
+            .interest {
+                width: 100%;
+                margin: 10px;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #151515;
+                color: white;
+            }
+
+            .instagram {
+                background-color: red;
+                color: forestgreen;
+            }
+
+            .result-name {
+                font-size: 20px;
+                background-color: black;
+                color: white;
+                padding: 5px;
+                border: 1px solid white;
+            }
+
+            #name-container {
+                text-align: left;
+                margin: 0 auto;
+                max-width: 400px;
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 5px;
+            }
+
+            .box {
+                width: 400px;
+                height: 40px;
+                border-radius: 8px;
+                border: 2px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+            }
+
+            label {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Find Match</h1>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required placeholder="Enter name:">
+
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female" required> Female
+
+
+
+            <label for="dob">Enter Age:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Age:">
+
+
+
+            <div>
+                <label for="relationshipStatus"> Relationship Status </label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Gourmet Cooking">
+                        Single
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Baking Pastries">
+                        Committed
+                    </div>
+
+                </div>
+
+
+
+
+                <label for="travel"> Life Style</label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Backpacking">
+                        Non-Smoker
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Cultural Exploration">
+                        Non-Veg
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Adventure Travel">
+                        Adventure
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Road Trips"> Foodie
+                    </div>
+                </div>
+
+
+
+                <label for="guitar">
+                    Playing Guitar:
+                </label>
+                <div class="interest">
+                    <div class="box">
+                        <input style="margin-left: 10px;" type="checkbox" name="interests" value="Acoustic"> Acoustic
+                    </div>
+                    <div class="box">
+                        <input style="margin-left: 10px;" type="checkbox" name="interests" value="Electric">Electric
+                    </div>
+                    <div class="box">
+                        <input style="margin-left: 10px;" type="checkbox" name="interests" value="Classical">Classical
+                    </div>
+                    <div class="box">
+                        <input style="margin-left: 10px;" type="checkbox" name="interests" value="Bass">Bass
+                    </div>
+                    <div class="box">
+                        <input style="margin-left: 10px;" type="checkbox" name="interests"
+                            value="Fingerstyle">Fingerstyle
+                    </div>
+                </div>
+
+
+                <label for="hiking">Hiking and Outdoor Activities:</label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" value="Trail Hiking"> Trail Hiking
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" value="Mountain Climbing"> Mountain Climbing
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" value="Nature Walks"> Nature Walks
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" value="Backpacking"> Backpacking
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" value="Day Hikes"> Day Hikes
+                    </div>
+                </div>
+
+
+
+                <label for="cooking">Cooking or Baking:</label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Gourmet Cooking">
+                        Gourmet
+                        Cooking
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Baking Pastries">Baking
+                        Pastries
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Italian Cuisine">
+                        Italian
+                        Cuisine
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Asian Fusion"> Asian
+                        Fusion
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="French Cuisine"> French
+                        Cuisine
+                    </div>
+                </div>
+
+
+
+                <label for="travel">Traveling:</label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Backpacking">
+                        Backpacking
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Cultural Exploration">
+                        Cultural Exploration
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Adventure Travel">
+                        Adventure Travel
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Road Trips"> Road Trips
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Solo Travel"> Solo
+                        Travel
+                    </div>
+                </div>
+
+
+                <label for="art">Art and Creative Pursuits:</label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Painting"> Painting
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Photography">
+                        Photography
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Sculpture"> Sculpture
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Pottery"> Pottery
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Digital Art"> Digital
+                        Art
+                    </div>
+                </div>
+
+
+                <label for="books">Reading Books:</label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Fiction Novels">
+                        Fiction
+                        Novels
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Science Fiction">
+                        Science
+                        Fiction
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Mystery and Thrillers">
+                        Mystery and Thrillers
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Non-Fiction">
+                        Non-Fiction
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Fantasy"> Fantasy
+                    </div>
+                </div>
+
+
+                <label for="sports">Playing Sports:</label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Basketball"> Basketball
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Soccer"> Soccer
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Tennis"> Tennis
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Golf"> Golf
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Swimming"> Swimming
+                    </div>
+                </div>
+
+                <label for="games">Gaming:</label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Video Games"> Video
+                        Games
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Board Games"> Board
+                        Games
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Card Games"> Card Games
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox"
+                            value="Role-Playing Games (RPGs)">
+                        Role-Playing Games (RPGs)
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Mobile Games"> Mobile
+                        Games
+                    </div>
+                </div>
+
+
+
+
+                <label for="volunteering">Volunteering:</label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox"
+                            value="Animal Shelter Volunteering"> Animal Shelter Volunteering
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox"
+                            value="Homeless Shelter Support">
+                        Homeless Shelter Support
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox"
+                            value="Environmental Conservation"> Environmental Conservation
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Youth Mentorship">
+                        Youth
+                        Mentorship
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Disaster Relief">
+                        Disaster
+                        Relief
+                    </div>
+                </div>
+
+
+                <label for="fitness">Fitness and Exercise:</label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Yoga"> Yoga
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Weightlifting">
+                        Weightlifting
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="CrossFit"> CrossFit
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox"
+                            value="Running and Marathon Training"> Running Training
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Pilates"> Pilates
+                    </div>
+                </div>
+
+
+                <label for="movies">Movie and TV Show Preferences:</label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Action Movies"> Action
+                        Movies
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Romantic Comedies">
+                        Romantic Comedies
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Sci-Fi Series"> Sci-Fi
+                        Series
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Documentaries">
+                        Documentaries
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Classic Films"> Classic
+                        Films
+                    </div>
+                </div>
+
+
+                <label for="dancing">Dancing:</label>
+                <div class="interest">
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Salsa Dancing"> Salsa
+                        Dancing
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Hip-Hop Dance"> Hip-Hop
+                        Dance
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Ballroom Dancing">
+                        Ballroom
+                        Dancing
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Ballet"> Ballet
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" name="interests" class="interest-checkbox" value="Swing Dance"> Swing
+                        Dance
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" onclick="matchUsers()">Submit</button>
+        </form>
+
+        <div class="result-box" id="result"></div>
+
+        <script src="script.js"></script>
+
+    </body>
+
+    </html>
+    <script>
+        function matchUsers() {
+            var form = document.getElementById("registrationForm");
+
+            var name = form.name.value;
+            var gender = form.gender.value;
+            var selectedInterests = Array.from(form.querySelectorAll('input[type=checkbox]:checked')).map(input => input.value);
+
+            var oppositeGenderUsers = usersData.filter(user => user.gender !== gender);
+
+            var matchingResults = oppositeGenderUsers.map(user => {
+                var commonInterests = user.interests.filter(interest => selectedInterests.includes(interest));
+                var matchingPercentage = (commonInterests.length / selectedInterests.length) * 99.99;
+                return {
+                    name: user.name,
+                    instagram: user.instagram,
+                    matchingPercentage: matchingPercentage,
+                    relationshipStatus: user.relationshipStatus
+                };
+            });
+
+            matchingResults.sort((a, b) => b.matchingPercentage - a.matchingPercentage); // Sort in descending order
+
+            var filteredResults = matchingResults.filter(result => result.matchingPercentage > 40);
+
+            var resultWindow = window.open('', '_blank');
+            resultWindow.document.write("<html><head><title>Matching Results</title>");
+            resultWindow.document.write("<style>");
+            resultWindow.document.write("body { font-family: Arial, sans-serif; } color:red;");
+            resultWindow.document.write("h2 { color: black; }");
+            resultWindow.document.write(".result-item { padding: 10px; margin: 10px; border-radius: 5px; }");
+            resultWindow.document.write(".name { font-weight: 800; }");
+            resultWindow.document.write(".percentage { font-style: italic; }");
+            resultWindow.document.write(".relationshipStatus { font-weight: 800; }");
+            resultWindow.document.write(".instagram { font-size: 80%; }");
+            resultWindow.document.write("</style>");
+            resultWindow.document.write("</head><body>");
+            resultWindow.document.write("<h2>Matching Users:</h2>");
+
+            if (filteredResults.length > 0) {
+                resultWindow.document.write("<style>");
+                resultWindow.document.write("body { background-image: url('./image/back.png'); background-size: cover; margin: 0; padding: 0; }");
+                resultWindow.document.write("table { border-collapse: collapse; width: 80%; margin: 0 auto; background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%); background-size: cover; }");
+                resultWindow.document.write("table { border-collapse: collapse; width: 80%; margin: 0 auto; }");
+                resultWindow.document.write("table, th, td { border: 1px solid black; text-align: center; }");
+                resultWindow.document.write("th, td { padding: 10px; }");
+                resultWindow.document.write("</style>");
+                resultWindow.document.write("<table>");
+                resultWindow.document.write("<tr><th>Name</th><th>Matching Percentage</th><th>Instagram</th><th>Status</th></tr>");
+
+                filteredResults.forEach(result => {
+                    resultWindow.document.write("<tr>");
+                    resultWindow.document.write("<td>" + result.name + "</td>");
+                    resultWindow.document.write("<td>" + result.matchingPercentage.toFixed(2) + "%</td>");
+                    resultWindow.document.write("<td><a href='" + result.instagram + "' target='_blank'>" + result.instagram + "</a></td>");
+                    resultWindow.document.write("<td>" + result.relationshipStatus + "</td>");
+                    resultWindow.document.write("</tr>");
+                });
+
+                resultWindow.document.write("</table>");
+            } else {
+                resultWindow.document.write("<p>No matching users found.</p>");
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

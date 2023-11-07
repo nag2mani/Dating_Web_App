@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #151515;
+            background-image: url('./image/back.png');
+        }
+
+        .container {
+            width: 700px;
+            overflow: auto;
+            border: 2px solid red;
+            background-color: #151515;
+            color: white;
+            margin-top: 30px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 class="mt-3">User Profile</h2>
+    <p><strong>Name:</strong> <span id="profileName"></span></p>
+    <p><strong>Date of Birth:</strong> <span id="profileDOB"></span></p>
+    <p><strong>Age:</strong> <span id="profileAge"></span></p>
+    <p><strong>Gender:</strong> <span id="profileGender"></span></p>
+    <p><strong>College Year:</strong> <span id="profileYear"></span></p>
+    <p><strong>College ID Number:</strong> <span id="profileID"></span></p>
+    <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+    <p><strong>Facebook:</strong> <a id="profileFacebook" href="#" target="_blank"></a></p>
+    <p><strong>Twitter:</strong> <a id="profileTwitter" href="#" target="_blank"></a></p>
+    <p><strong>Instagram:</strong> <a id="profileInstagram" href="#" target="_blank"></a></p>
+    <p><strong>LinkedIn:</strong> <a id="profileLinkedIn" href="#" target="_blank"></a></p>
+    
+    <!-- <p><strong>Social Media Profile Link:</strong> <span id="profileSocialMedia"></span></p> -->
+</div>
+
+<script>
+    // Retrieve the user data from the query parameters in the URL.
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name');
+    const dob = urlParams.get('dob');
+    const age = urlParams.get('age');
+    const gender = urlParams.get('gender');
+    const year = urlParams.get('year');
+    const ID = urlParams.get('ID');
+    const email = urlParams.get('email');
+
+    const socialMediaFacebook = urlParams.get('social_media_facebook');
+    const socialMediaTwitter = urlParams.get('social_media_twitter');
+    const socialMediaInstagram = urlParams.get('social_media_instagram');
+    const socialMediaLinkedIn = urlParams.get('social_media_linkedin');
+    // const socialMedia = urlParams.get('social_media');
+
+    // Display the user data on the profile page.
+    document.getElementById('profileName').textContent = name;
+    document.getElementById('profileDOB').textContent = dob;
+    document.getElementById('profileAge').textContent = age;
+    document.getElementById('profileGender').textContent = gender;
+    document.getElementById('profileYear').textContent = year;
+    document.getElementById('profileID').textContent = ID;
+    document.getElementById('profileEmail').textContent = email;
+
+    document.getElementById('profileFacebook').textContent = socialMediaFacebook;
+    // document.getElementById('profileFacebook').href = socialMediaFacebook;
+    
+    document.getElementById('profileTwitter').textContent = socialMediaTwitter;
+    // document.getElementById('profileTwitter').href = socialMediaTwitter;
+    
+    document.getElementById('profileInstagram').textContent = socialMediaInstagram;
+    // document.getElementById('profileInstagram').href = socialMediaInstagram;
+    
+    document.getElementById('profileLinkedIn').textContent = socialMediaLinkedIn;
+    // document.getElementById('profileLinkedIn').href = socialMediaLinkedIn;
+    // document.getElementById('profileSocialMedia').textContent = socialMedia;
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
