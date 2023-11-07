@@ -9,7 +9,7 @@ I have used the following Tech - Stack :
 5. Python
 
 
-
+We have used the simple algorithm for matching which is ( (Number of interests or hobbies matched)/(Total number of interests or hobbies) ) * 100
 
 Time Taken : 2 days
 
